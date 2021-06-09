@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Carga de productos</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0"> 
+        <link href="./styles-ejercicio-2-formularios.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <h3>Carga de productos</h3>
+            <form name="carga-productos" autocomplete="on">
+                <label for="titulo-producto">Título de producto <input type="text" id="titulo-producto"></label>
+                
+                <label for="marca">Marca 
+                    <select name="marca" id="marca" >
+                        <option value="klatter">Klatter</option>
+                        <option value="top-mega">Top Mega</option>
+                        <option value="fierce">Fierce</option>
+                        <option value="shimano">Shimano</option>
+                        <option value="lamborghini">Lamborghini</option>
+                        <option value="aurora">Aurora</option>
+                        <option value="gt">GT</option>
+                    </select>
+                </label>
+                
+                <label for="rodado">Rodado<input type="number" max=29></label>
+
+                <p>Categoría de producto</p>
+                <div class="categoria">
+                    <label for="mb">Mountain Bike<input type="radio" name="cat-producto" id="mb" value="mountain-bike"></label>
+
+                    <label for="paseo">Paseo<input type="radio" name="cat-producto" id="paseo" value="paseo"></label>
+
+                    <label for="plegable">Plegable<input type="radio" name="cat-producto" id="plegable" value="plegable"></label>
+
+                    <label for="carrera">Carrera<input type="radio" name="cat-producto" id="carrera" value="carrera"></label>
+                </div>
+
+                <label for="desc-producto" class="descripcion">Descripción del producto
+                    <textarea name="descripción" id="desc-producto" cols="30" rows="10"></textarea>
+                </label>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+    </body>
+</html>
